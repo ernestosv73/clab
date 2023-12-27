@@ -14,14 +14,14 @@ topology:
     
     PC1:
       kind: linux
-      image: wbitt/network-multitool:fedora
+      image: praqma/network-multitool:extra
       exec:
       - ip -6 route del default dev eth0
       - ip -6 route add default via 2001:BD4:ABCD:1111:BBBB:CCCC:1:1
     
     PC3:
       kind: linux
-      image: wbitt/network-multitool:fedora
+      image: praqma/network-multitool:extra
       exec:
       - ip -6 route del default dev eth0
       - ip -6 route add default via 2001:BD4:ABCD:AAAA:BBBB:CCCC:1:1
