@@ -14,7 +14,7 @@ topology:
     
     PC1:
       kind: linux
-      image: praqma/network-multitool:extra
+      image: kalifull
       exec:
       - ip -6 route del default dev eth0
       - ip -6 route add default via 2001:BD4:ABCD:1111:BBBB:CCCC:1:1
